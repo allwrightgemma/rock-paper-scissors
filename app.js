@@ -6,31 +6,30 @@ let userChoice;
 let computerChoice;
 let result;
 
-possibleChoices.forEach((possibleChoice) =>
-  possibleChoice.addEventListener("click", (event) => {
-    userChoice = event.target.id;
-    userChoiceDisplay.innerHTML = userChoice;
-    generateComputerChoice();
-    getResult();
-  })
-);
-
 function generateComputerChoice() {
-  const randomNumber = Math.floor(Math.random() * possibleChoices.length) + 1;
-
-  if (randomNumber === 1) {
-    computerChoice = "rock";
-  }
-  if (randomNumber === 2) {
-    computerChoice = "paper";
-  }
-  if (randomNumber === 3) {
-    computerChoice = "scissors";
-  }
+  let computerChoices = ["rock", "paper", "scissors"];
+  const computerChoice =
+    computerChoices[Math.floor(Math.random() * computerChoices.length)];
   computerChoiceDisplay.innerHTML = computerChoice;
 }
 
+// function generateComputerChoice() {
+//   const randomNumber = Math.floor(Math.random() * possibleChoices.length) + 1;
+
+//   if (randomNumber === 1) {
+//     computerChoice = "rock";
+//   }
+//   if (randomNumber === 2) {
+//     computerChoice = "paper";
+//   }
+//   if (randomNumber === 3) {
+//     computerChoice = "scissors";
+//   }
+//   computerChoiceDisplay.innerHTML = computerChoice;
+// }
+
 function getResult() {
+  console.log(computerChoice);
   if (computerChoice === userChoice) {
     result = "It's a draw!";
   }
