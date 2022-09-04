@@ -1,19 +1,23 @@
 const computerChoiceDisplay = document.getElementById("computer-choice");
 const userChoiceDisplay = document.getElementById("user-choice");
 const resultDisplay = document.getElementById("result");
-let possibleChoices = document.querySelectorAll("button");
+let possibleChoices = document.querySelectorAll(".choice");
 let userChoice;
 let computerChoice;
 let result;
 
-possibleChoices.forEach((possibleChoice) =>
-  possibleChoice.addEventListener("click", (event) => {
-    userChoice = event.target.id;
-    userChoiceDisplay.innerHTML = userChoice;
-    generateComputerChoice();
-    getResult();
-  })
-);
+possibleChoices.forEach(function (possibleChoice) {
+  possibleChoice.addEventListener("click", handleUserChoice);
+});
+
+function handleUserChoice(event) {
+  event.preventDefault();
+  userChoice = event.target.id;
+  userChoiceDisplay.innerHTML = userChoice;
+  generateComputerChoice();
+  getResult();
+}
+
 function generateComputerChoice() {
   let computerChoices = ["rock", "paper", "scissors"];
   computerChoice =
@@ -33,6 +37,5 @@ function getResult() {
   } else {
     result = "You lose!";
   }
-
   resultDisplay.innerHTML = result;
 }
