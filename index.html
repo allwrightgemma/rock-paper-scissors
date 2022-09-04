@@ -4,15 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/395c1b9ad8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Rock Paper Scissors Game</title>
   </head>
   <body>
-    <h2>Computer Choice: <span id="computer-choice"></span></h2>
-    <h2>Your Choice: <span id="user-choice"></span></h2>
-    <h2>Result: <span id="result"></span></h2>
-    <button class="choice" id="rock">rock</button>
-    <button class="choice" id="paper">paper</button>
-    <button class="choice" id="scissors">scissors</button>
+    <h1>Rock Paper Scissors</h1>
+    <div class="game">
+      <div class="results-table">
+        <h2>Opponent Choice: <span id="computer-choice"></span></h2>
+
+        <h2>Your Choice: <span id="user-choice"></span></h2>
+
+        <h2>Result: <span id="result"></span></h2>
+      </div>
+      <button id="rock">
+        <i id="rock" class="fa-regular fa-hand-back-fist"></i>
+      </button>
+      <button id="paper">
+        <i id="paper" class="fa-regular fa-hand"></i>
+      </button>
+      <button id="scissors">
+        <i id="scissors" class="fa-regular fa-hand-scissors"></i>
+      </button>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>

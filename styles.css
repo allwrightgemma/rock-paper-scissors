@@ -1,0 +1,45 @@
+body {
+  text-align: center;
+  background: #282631;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.game {
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.results-table {
+  margin: 50px 0;
+}
+
+.results-table h2 {
+  text-align: left;
+}
+.results-table span {
+  text-align: right;
+}
+
+button {
+  border-radius: 50%;
+  padding: 25px;
+  margin: 10px;
+  background-color: rgb(94, 94, 182);
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+button i {
+  font-size: 50px;
+  color: rgb(189, 191, 193);
+}
+
+button:hover {
+  background-color: white;
+  cursor: pointer;
+}
