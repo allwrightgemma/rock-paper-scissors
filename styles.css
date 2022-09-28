@@ -22,7 +22,7 @@ h1 {
   text-align: center;
   width: 250px;
   margin: 30px auto;
-  padding-bottom: 10px;
+  padding: 20px 10px;
   position: relative;
 }
 
@@ -38,12 +38,12 @@ h1 {
 
 #user-label {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: -50px;
 }
 #comp-label {
   position: absolute;
-  top: 30%;
+  top: 35%;
   right: -50px;
 }
 
