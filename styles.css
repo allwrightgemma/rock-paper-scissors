@@ -7,11 +7,44 @@ body {
 
 h1 {
   font-size: 40px;
+  margin-bottom: 40px;
 }
 
 .game {
   margin: 0 auto;
   max-width: 550px;
+}
+
+.scoreboard {
+  border: 2px white solid;
+  border-radius: 4px;
+  font-size: 60px;
+  text-align: center;
+  width: 250px;
+  margin: auto;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.label {
+  background-color: rgb(165, 62, 62);
+  font-size: 18px;
+  width: 70px;
+  text-align: center;
+  padding: 5px 10px;
+  font-weight: bold;
+  margin: auto;
+}
+
+#user-label {
+  position: absolute;
+  top: 30%;
+  left: -50px;
+}
+#comp-label {
+  position: absolute;
+  top: 30%;
+  right: -50px;
 }
 
 .results-table {
